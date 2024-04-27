@@ -4,7 +4,7 @@
 #
 # Install:
 # 
-# sh -c "$(curl -fsSL https://gist.githubusercontent.com/x43x61x69/9a5a231a25426e8a2cc0f7c24cfdaed9/raw/vnc_install.sh?$RANDOM)"
+# sh -c "$(curl -fsSL https://raw.githubusercontent.com/sshuen30/Install_x11vnc_Steam/main/vnc_install.sh?$RANDOM)"
 #
 # This will modify root filesystem so it will probably get
 # overwrite on system updates but is totally ok executing
