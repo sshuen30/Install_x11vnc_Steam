@@ -32,9 +32,8 @@ steamos-readonly disable
 
 if [ ! -e "/etc/pacman.d/gnupg/trustdb.gpg" ]; then
     echo "Initalizing pacman keys"
-    pacman-key --init
-    pacman-key --populate holo
-    sudo pacman -Scc
+    sudo pacman-key --init
+    sudo pacman-key --populate holo
 fi
 
 echo "Installing package"
