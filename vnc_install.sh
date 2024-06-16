@@ -37,7 +37,8 @@ if [ ! -e "/etc/pacman.d/gnupg/trustdb.gpg" ]; then
 fi
 
 echo "Installing package"
-pacman -Sy --noconfirm x11vnc
+## pacman -Sy --noconfirm x11vnc
+pacman -Sy --noconfirm --overwrite "*" x11vnc
 
 echo "Re-enabling readonly filesystem"
 steamos-readonly enable
