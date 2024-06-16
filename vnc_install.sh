@@ -33,7 +33,8 @@ steamos-readonly disable
 if [ ! -e "/etc/pacman.d/gnupg/trustdb.gpg" ]; then
     echo "Initalizing pacman keys"
     sudo pacman-key --init
-    sudo pacman-key --populate archlinux
+    sudo pacman-key --refresh-keys
+    sudo pacman -Syyu
     sudo pacman-key --populate holo
 fi
 
